@@ -167,11 +167,24 @@ h1 {
 }
 
 .opening-img {
+  position: relative;
   width: 803.93px;
   height: 666px;
   margin: 48px 0 0 0;
-  background-image: url(public/vector/mask_img_header.svg),
-    url(public/img/img_header.jpg);
+  background-image: url(public/img/img_header.jpg);
+  background-size: cover;
+}
+
+.opening-img::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(public/vector/mask_img_header.svg);
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  mix-blend-mode: screen;
 }
