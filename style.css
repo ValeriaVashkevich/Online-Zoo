@@ -11,6 +11,11 @@ body {
   height: 100%;
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -115,10 +120,6 @@ a {
   width: 750px;
 }
 
-h1 {
-  margin: 0;
-}
-
 .opening-title {
   margin: 103px 0 27px 0;
 }
@@ -189,14 +190,18 @@ h1 {
   mix-blend-mode: screen;
 }
 
-.next_blok-title {
-  margin: 259px 0 0 0;
+.next_blok-title,
+.title_pets-blok {
   font-family: "Rubik";
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #0d444d;
+}
+
+.next_blok-title {
+  margin: 259px 0 0 0;
 }
 
 .instruction-blok {
@@ -253,4 +258,109 @@ h1 {
   font-size: 14px;
   line-height: 20px;
   color: #0d444d;
+}
+
+.pets-blok {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 867px;
+  margin: 70px 0 0 0;
+}
+
+.title_coose-button_container,
+.pets-cards_container {
+  margin: 0 220px;
+}
+
+.title_coose-button_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coose-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 331px;
+  height: 52px;
+  border: 1.5px solid #19707d;
+  border-radius: 100px;
+}
+
+.like_coose-button {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 20px;
+  background-image: url(public/vector/like_ico.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description_coose-button {
+  margin: 0 20px 0 0;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #19707d;
+}
+
+.pets-cards_container {
+  height: 748px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pet-card_item {
+  width: 480px;
+  height: 364px;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.pet-image {
+  height: 272px;
+  border-bottom: 1px solid #e5eaeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet_description-icon_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 30px 0;
+  align-items: center;
+}
+
+.pet-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2d2d2d;
+}
+
+.pet-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+
+.pet_tv-icon {
+  width: 32px;
+  height: 32px;
+  background-image: url(public/vector/tv_ico.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
